@@ -26,6 +26,16 @@ You can install the package in to a Laravel app that uses [Nova](https://nova.la
 composer require hnassr/nova-places
 ```
 
+```php
+['country', 'county', 'administrative', 'city', 'full'] // Available Fileds
+```
+
+```php
+Places::make('Place', 'place')
+    ->indexField('city') // what to show in resource index page
+    ->showFields(['country', 'county', 'administrative', 'city', 'full']), // what to show in resource preview page
+```
+
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
