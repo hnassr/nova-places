@@ -7,11 +7,11 @@ This field add to laravel nova [algolia places](https://github.com/algolia/place
 
 # Nova Places
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
-![CircleCI branch](https://img.shields.io/circleci/project/github/:vendor/:package_name/master.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/:vendor/:package_name/master.svg?style=flat-square)](https://travis-ci.org/:vendor/:package_name)
-[![Quality Score](https://img.shields.io/scrutinizer/g/:vendor/:package_name.svg?style=flat-square)](https://scrutinizer-ci.com/g/:vendor/:package_name)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/hnassr/nova-places.svg?style=flat-square)](https://packagist.org/packages/hnassr/nova-places)
+![CircleCI branch](https://img.shields.io/circleci/project/github/hnassr/nova-places/master.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/hnassr/nova-places/master.svg?style=flat-square)](https://travis-ci.org/hnassr/nova-places)
+[![Quality Score](https://img.shields.io/scrutinizer/g/hnassr/nova-places.svg?style=flat-square)](https://scrutinizer-ci.com/g/hnassr/nova-places)
+[![Total Downloads](https://img.shields.io/packagist/dt/hnassr/nova-places.svg?style=flat-square)](https://packagist.org/packages/hnassr/nova-places)
 
 
 This package add to laravel nova [algolia places](https://github.com/algolia/places) field
@@ -24,16 +24,6 @@ You can install the package in to a Laravel app that uses [Nova](https://nova.la
 
 ```bash
 composer require hnassr/nova-places
-```
-
-## Usage
-
-Click on the ":package_name" menu item in your Nova app to see the tool provided by this package.
-
-### Testing
-
-``` bash
-composer test
 ```
 
 ## Contributing
