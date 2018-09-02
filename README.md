@@ -21,11 +21,12 @@ composer require hnassr/nova-places
 ```
 
 ```php
-['country', 'county', 'administrative', 'city', 'full'] // Available Fileds
+['country', 'county', 'administrative', 'city', 'full', 'countryCode'] // Available Fileds
 ```
 
 ```php
 Places::make('Place', 'place')
+    ->locale('de') // default locale is en
     ->indexField('city') // what to show in resource index page
     ->showFields(['country', 'county', 'administrative', 'city', 'full']), // what to show in resource preview page
 ```

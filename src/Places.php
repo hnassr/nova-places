@@ -15,7 +15,7 @@ class Places extends Field
 
     /**
      * @param array $fields
-     * @options=["country", "county", "administrative", "city", "full"]
+     * @options=["country", "county", "administrative", "city", "full", "countryCode"]
      * @return Places
      */
     public function showFields(array $fields)
@@ -25,7 +25,7 @@ class Places extends Field
 
     /**
      * @param string $filed
-     * @options=["country", "county", "administrative", "city", "full"]
+     * @options=["country", "county", "administrative", "city", "full", "countryCode"]
      * @return Places
      */
     public function indexField(string $filed)

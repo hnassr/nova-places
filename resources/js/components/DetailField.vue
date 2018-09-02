@@ -1,6 +1,14 @@
 <template>
     <panel-item :field="field">
         <div class="" v-if="place" slot="value">
+            <div class="flex" v-if="field.show_fields.indexOf('countryCode') > -1">
+                <div class="w-1/6 py-4">
+                    <h4 class="font-normal text-80">Country Code</h4>
+                </div>
+                <div class="w-3/4 py-4">
+                    <p class="text-90">{{ place.countryCode }}</p>
+                </div>
+            </div>
             <div class="flex" v-if="field.show_fields.indexOf('country') > -1">
                 <div class="w-1/6 py-4">
                     <h4 class="font-normal text-80">Country</h4>

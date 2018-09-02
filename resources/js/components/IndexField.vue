@@ -13,7 +13,8 @@
                     'county': 'county',
                     'administrative': 'administrative',
                     'city': 'name',
-                    'full': 'value'
+                    'full': 'value',
+                    'countryCode': 'countryCode',
                 }
             }
         },
