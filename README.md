@@ -1,10 +1,3 @@
-
-# Nova Places Field
-
-This field add to laravel nova [algolia places](https://github.com/algolia/places) field
-
-## Screenshots
-
 # Nova Places
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/hnassr/nova-places.svg?style=flat-square)](https://packagist.org/packages/hnassr/nova-places)
