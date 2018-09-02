@@ -17,6 +17,7 @@ This field add to laravel nova [algolia places](https://github.com/algolia/place
 This package add to laravel nova [algolia places](https://github.com/algolia/places) field
 
 ## Screenshots
+<img src="ScreenShot.png">
 
 ## Installation
 
