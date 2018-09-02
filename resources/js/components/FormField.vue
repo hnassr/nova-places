@@ -38,6 +38,7 @@
             let placesAutocomplete = places({
                 container: document.querySelector('.hnassr-places'),
                 language: this.field.place_locale ? this.field.place_locale : 'en',
+                countries: this.field.place_countries ? this.field.place_countries : [],
             });
             placesAutocomplete.on('change', e => {
                 let place = {

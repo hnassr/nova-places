@@ -41,4 +41,9 @@ class Places extends Field
     {
         return $this->withMeta(['place_locale' => $locale]);
     }
+
+    public function countries(array $countries)
+    {
+        return $this->withMeta(['place_countries' => $countries]);
+    }
 }

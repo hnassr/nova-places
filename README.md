@@ -27,6 +27,7 @@ composer require hnassr/nova-places
 ```php
 Places::make('Place', 'place')
     ->locale('de') // default locale is en
+    ->countries(['us', 'uk']) // Search in specific countries
     ->indexField('city') // what to show in resource index page
     ->showFields(['country', 'county', 'administrative', 'city', 'full']), // what to show in resource preview page
 ```
