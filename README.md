@@ -21,7 +21,7 @@ composer require hnassr/nova-places
 ```
 
 ```php
-['country', 'county', 'administrative', 'city', 'full', 'countryCode'] // Available Fileds
+['country', 'county', 'administrative', 'city', 'full', 'countryCode', 'latlng', 'postcode'] // Available Fileds
 ```
 
 ```php
