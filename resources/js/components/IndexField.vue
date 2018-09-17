@@ -15,24 +15,24 @@
                     'city': 'name',
                     'full': 'value',
                     'countryCode': 'countryCode',
+                    'latlng': 'latlng',
+                    'postcode': 'postcode',
                 }
             }
         },
 
         computed: {
-            placeN() {
-                if(this.field.value) {
-                    return JSON.parse(this.field.value).value;
-                }
-
-                return null;
-            },
-
             place() {
                 if(this.field.value) {
                     let index = this.available[this.field.index_field];
 
-                    return JSON.parse(this.field.value)[index];
+                    let parsed = JSON.parse(this.field.value);
+
+                    if(index == 'latlng') {
+                        return `${parsed[index].lat},${parsed[index].lng}`;
+                    }
+
+                    return parsed[index];
                 }
 
                 return null;

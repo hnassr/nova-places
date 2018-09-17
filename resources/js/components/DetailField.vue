@@ -17,6 +17,14 @@
                     <p class="text-90">{{ place.country }}</p>
                 </div>
             </div>
+            <div class="flex" v-if="field.show_fields.indexOf('postcode') > -1">
+                <div class="w-1/6 py-4">
+                    <h4 class="font-normal text-80">Postcode</h4>
+                </div>
+                <div class="w-3/4 py-4">
+                    <p class="text-90">{{ place.postcode }}</p>
+                </div>
+            </div>
             <div class="flex" v-if="field.show_fields.indexOf('administrative') > -1">
                 <div class="w-1/6 py-4">
                     <h4 class="font-normal text-80">Administrative</h4>
@@ -39,6 +47,14 @@
                 </div>
                 <div class="w-3/4 py-4">
                     <p class="text-90">{{ place.name }}</p>
+                </div>
+            </div>
+            <div class="flex" v-if="field.show_fields.indexOf('latlng') > -1">
+                <div class="w-1/6 py-4">
+                    <h4 class="font-normal text-80">LatLng</h4>
+                </div>
+                <div class="w-3/4 py-4">
+                    <p class="text-90">{{ `${place.latlng.lat},${place.latlng.lng}` }}</p>
                 </div>
             </div>
             <div class="flex" v-if="field.show_fields.indexOf('full') > -1">

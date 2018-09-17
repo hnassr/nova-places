@@ -48,6 +48,8 @@
                     value: e.suggestion.value,
                     county: e.suggestion.county,
                     administrative: e.suggestion.administrative,
+                    latlng: e.suggestion.latlng,
+                    postcode: e.suggestion.postcode,
                 }
                 this.place = place.value;
                 this.value = JSON.stringify(place)

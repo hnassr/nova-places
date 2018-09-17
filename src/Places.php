@@ -15,7 +15,7 @@ class Places extends Field
 
     /**
      * @param array $fields
-     * @options=["country", "county", "administrative", "city", "full", "countryCode"]
+     * @options=["country", "county", "administrative", "city", "full", "countryCode", "latlng", "postcode"]
      * @return Places
      */
     public function showFields(array $fields)
@@ -25,7 +25,7 @@ class Places extends Field
 
     /**
      * @param string $filed
-     * @options=["country", "county", "administrative", "city", "full", "countryCode"]
+     * @options=["country", "county", "administrative", "city", "full", "countryCode", "latlng", "postcode"]
      * @return Places
      */
     public function indexField(string $filed)
@@ -42,6 +42,10 @@ class Places extends Field
         return $this->withMeta(['place_locale' => $locale]);
     }
 
+    /**
+     * @param array $countries
+     * @return Places
+     */
     public function countries(array $countries)
     {
         return $this->withMeta(['place_countries' => $countries]);
